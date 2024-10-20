@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login&signup button</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            border: 3px solid black;
+            position: relative;
+            top: 300px;
+            left: 100px;
+            border-radius: 10%;
+
+
+        }
+        #btn1{
+            width: 100px;
+            height: 50px;
+            border: 2px solid blue ;
+            background: darkseagreen;
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            transition: 1s;
+            transform: translate(10px);
+            animation: btn1 3s linear infinite;
+            animation-direction: normal;
+            animation-delay: 5s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes btn1 {
+            25%{
+                transform: translateX(300px) rotateZ(360deg);
+
+            }
+            50%{
+                transform: translatey(300px) rotateZ(-360deg);
+
+            }
+            75%{
+                transform: translateX(-300px) rotateZ(360deg);
+
+            }
+            100%{
+                transform: translatey(-300px) rotateZ(-360deg);
+
+            }
+            
+        }
+
+
+        
+        #btn1:hover{
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            transition: 1s;
+            transform:translate(20px) ;
+
+        }
+        #btn2:hover{
+            width: 100px;
+            height: 50px;
+            background-color: yellowgreen;
+            transition: 1s;
+            transform:translate(20px) ;
+        }
+
+        #btn2{
+            width: 100px;
+            height: 50px;
+            border: 2px solid black  ;
+            background: red;
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            transition: 1s;
+            transform: translatex(10px);
+
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">
+        <a href=""> LOGIN</a>
+    </button>
+    <button id="btn2">
+        <a href="">SIGNUP</a>
+    </button>
+</body>
+</html>

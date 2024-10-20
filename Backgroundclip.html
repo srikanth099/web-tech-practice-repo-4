@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>CSS BOX MODEL</title>
+	<style>
+		#one,#two,#three
+		{
+			background-color: yellow;
+			color: red;
+			width: 400px;
+			padding: 15px;
+			border: 20px dotted red;
+			margin-bottom: 30px;
+			
+		}
+		#one
+		{
+			background-clip: border-box;
+		}
+		#two
+		{
+			background-clip: padding-box;
+		}
+		#three
+		{
+			background-clip: content-box;
+		}
+	</style>
+</head>
+<body>
+	<div id="one">
+		<p>dtfuhojhgcfdsrtrytuiouklmnbvcxzasdfgtuijkjmnbvcduiopkl
+		tfuhojhgcfdsrtrytuiouklmnbvcxzasdfgtuijkjmmnbvcduiopklm</p>
+	</div>
+	<div id="two">
+		<p>hljkljgytdere6yijlknmvgdreaserr7uypokll,mbddfasfdcvnkjiydtf</p>
+	</div>
+	<div id="three">
+		<p>gjgjhgfgdtruijolkmnbhcfdzaerdfujolkl;km,mnholbjhvgdrdfg</p>
+	</div>
+</body>
+</html>

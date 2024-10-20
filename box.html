@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            width: 300px;
+            height: 200px;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 1px solid black;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #circle{
+            width: fit-content;
+            height: 100vh;
+            background: linear-gradient(360deg,orange,white,lightblue,lightgreen);
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-timing-function:linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            position: absolute;
+            transition: 2s;
+            text-align: center;
+            
+        }
+        #box:hour{
+            width: 100px;
+            height: 100vh;
+            background:rgb(red, green, blue);
+            animation-name: box;
+            animation-duration: 5s;
+            animation-timing-function:linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            position: absolute;
+            transition: 2s;
+            text-align: center;
+            transform: translate(30px,30px);
+            
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <div id="box"></div>
+    
+</body>
+</html>
